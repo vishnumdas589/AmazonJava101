@@ -10,10 +10,11 @@ public class ClassMethods {
 		int maxValue = findMax(values);
 		int factNum = 10;
 		int factorialvalue = factorial(factNum); 
+		int addedValue = add(5,6,7);
 		System.out.println("name reversed is " + name);
 		System.out.println("max value   is " + maxValue);
 		System.out.println("facotial value of " + factNum+" is " +factorialvalue);
-
+		System.out.println(addedValue);
 	}
 	public static String stringReverse(String text) {
 		StringBuilder reversedText = new StringBuilder();
@@ -47,6 +48,13 @@ public class ClassMethods {
 		}
 		return value * factorial( value-1);
 	}
+	public static int add(int a, int b) {
+        return a + b;
+    }
+
+    public static int add(int a, int b, int c) {
+        return add(a,b) + c;
+    }
 	
 
 }
