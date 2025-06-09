@@ -1,10 +1,6 @@
 package day04OOPS;
 
-public class Bank {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
+public abstract class  Bank {
+	abstract int rateOfInterest();
+	
 }
