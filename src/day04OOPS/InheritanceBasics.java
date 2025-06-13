@@ -22,14 +22,12 @@ public class InheritanceBasics {
 //		System.out.println("PNI " + pnb + " & SBI "+ sbi );
 		Parrot p = new Parrot();
 		Animal a = new Parrot();
-		Bird b = new Parrot();
+		Bird b = p;
 		
-		
-		p.fly();
 		p.talk();
-		p.walk();
-		a.walk();
-		b.fly();
+		
+		
+	
 	}
 
 }
