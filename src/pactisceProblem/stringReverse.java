@@ -10,6 +10,7 @@ public class stringReverse {
 		System.out.println(strRevUsingTwoPointer(str));
 		System.out.println(strRevUsingStrBulder(str));
 		System.out.println(strRevUsingStack(str));
+		System.out.println(strRevUsingRec(str));
 		
 
 	}
@@ -65,13 +66,13 @@ public class stringReverse {
 			
 		return new String(charArr);
 	}
-//	public static String strRevUsingRec( String str) {
-//		if(str.length() == 0) {
-//			return;
-//		}
-//		return strRevUsingRec(str.substring(1)) + strRevUsingRec(str.charAt(0));
-//		
-//		
-//	}
+	public static String strRevUsingRec( String str) {
+		if(str.length() == 0) {
+			return str;
+		}
+		return strRevUsingRec(str.substring(1)) + str.charAt(0);
+		
+		
+	}
 	
 }
